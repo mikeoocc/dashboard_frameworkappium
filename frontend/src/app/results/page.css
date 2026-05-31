@@ -1,0 +1,133 @@
+.backButton {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-family: var(--font-cinzel), serif;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #f0e6d3;
+  text-decoration: none;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
+  transition: color 0.2s;
+}
+
+.backButton:hover {
+  color: #c8a96e;
+}
+
+.resultsWrapper {
+  min-height: 100vh;
+  background: url("/back3.jpg") center center / cover no-repeat fixed;
+}
+
+.resultsMain {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+
+.resultsHeader {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.resultsTitle {
+  margin: 0;
+  font-family: var(--font-cinzel), serif;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  background: linear-gradient(180deg, #f0e0a0 0%, #c8a96e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+
+.connectionStatus {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  background: var(--muted);
+}
+
+.dot-live {
+  background: #7ab86a;
+  box-shadow: 0 0 6px #7ab86a;
+}
+
+.dot-connecting {
+  background: #c8a030;
+}
+
+.dot-offline {
+  background: #c0392b;
+}
+
+.errorBanner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+  padding: 12px 16px;
+  border: 1px solid var(--red-fg);
+  background: var(--error-bg);
+  color: var(--red-fg);
+  font-size: 14px;
+  backdrop-filter: blur(12px);
+}
+
+.retryButton {
+  padding: 4px 14px;
+  border: 1px solid var(--red-fg);
+  background: transparent;
+  color: var(--red-fg);
+  font-family: var(--font-cinzel), serif;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.retryButton:hover {
+  background: rgba(192, 57, 43, 0.2);
+}
+
+.statsSection {
+  margin-bottom: 28px;
+}
+
+.emptyState {
+  padding: 48px 16px;
+  text-align: center;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  backdrop-filter: blur(12px);
+  letter-spacing: 0.05em;
+}
+
+.resultsList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

@@ -1,0 +1,46 @@
+:root {
+  --surface: rgba(13, 11, 8, 0.88);
+  --border: rgba(200, 169, 110, 0.3);
+  --text: #e8d5b0;
+  --muted: #8b7355;
+
+  --gold: #c8a96e;
+
+  --green-bg: rgba(45, 90, 39, 0.35);
+  --green-fg: #7ab86a;
+  --red-bg: rgba(92, 26, 26, 0.35);
+  --red-fg: #c0392b;
+  --gray-bg: rgba(60, 55, 45, 0.35);
+  --gray-fg: #8b8070;
+  --yellow-bg: rgba(100, 80, 10, 0.35);
+  --yellow-fg: #c8a030;
+
+  --error-bg: rgba(92, 26, 26, 0.3);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+body {
+  background: linear-gradient(160deg, #0d0b08 0%, #1a1208 50%, #0f0d0a 100%);
+  background-attachment: fixed;
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-cinzel), serif;
+}
+
+button {
+  font-family: inherit;
+}

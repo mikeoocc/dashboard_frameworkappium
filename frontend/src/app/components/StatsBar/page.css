@@ -1,0 +1,48 @@
+.statsBar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.statCard {
+  display: flex;
+  flex-direction: column;
+  min-width: 110px;
+  padding: 14px 20px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  backdrop-filter: blur(12px);
+  transition: border-color 0.2s;
+}
+
+.statCard:hover {
+  border-color: rgba(200, 169, 110, 0.5);
+}
+
+.statValue {
+  font-family: var(--font-cinzel), serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--text);
+}
+
+.statLabel {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+.statPassed {
+  color: var(--green-fg);
+}
+
+.statFailed {
+  color: var(--red-fg);
+}
+
+.statBlue {
+  color: var(--gold);
+}

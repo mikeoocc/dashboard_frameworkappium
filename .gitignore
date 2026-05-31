@@ -31,3 +31,14 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Claude Code ###
+.claude/
+
+### H2 file-mode database & local run artifacts ###
+data/
+*.mv.db
+*.trace.db
+*.lock.db
+app.log
+mvn-compile.log
